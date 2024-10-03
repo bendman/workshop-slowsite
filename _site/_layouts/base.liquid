@@ -14,8 +14,11 @@
     <style>{% include 'styles/reset.css' %}</style>
     <style>{% include 'styles/global.css' %}</style>
     <style>{% include 'styles/cookies.css' %}</style>
-    <style>{% include 'styles/homepage.css' %}</style>
-    <style>{% include 'styles/product-detail-page.css' %}</style>
+    {% if product %}
+      <style>{% include 'styles/product-detail-page.css' %}</style>
+    {% else %}
+      <style>{% include 'styles/homepage.css' %}</style>
+    {% endif %}
 
     <link rel="preload" as="image" href="/images/product-image-1-preview.jpg?width=100" />
 
