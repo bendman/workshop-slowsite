@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <script>performance.mark("head_start")</script>
     {% if product %}
       <link rel="canonical" href="/catalog/{{ product.slug }}/" />
@@ -24,7 +25,6 @@
     <title>TWNSND Workshop Slow Site</title>
 
     <script>performance.mark("head_end");performance.measure("head_duration", "head_start", "head_end")</script>
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="/styles/ct.css" />
   </head>
 
