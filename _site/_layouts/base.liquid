@@ -6,7 +6,7 @@
 
     <title>TWNSND Workshop Slow Site</title>
 
-    <script>performance.mark("head_start")</script>
+    {% comment %}<script>performance.mark("head_start")</script>{% endcomment %}
     <script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.js" async></script>
     <script src="/scripts/cookies.js" type="module" async></script>
 
@@ -30,8 +30,8 @@
     <meta name="robots" content="noindex,nofollow" />
     <meta name="description" content="A purposefully slow website for educational purposes">
 
-    <script>performance.mark("head_end");performance.measure("head_duration", "head_start", "head_end")</script>
-    <link rel="stylesheet" href="/styles/ct.css" />
+    {% comment %}<script>performance.mark("head_end");performance.measure("head_duration", "head_start", "head_end")</script>{% endcomment %}
+    {% comment %} <link rel="stylesheet" href="/styles/ct.css" /> {% endcomment %}
   </head>
 
   <body>
