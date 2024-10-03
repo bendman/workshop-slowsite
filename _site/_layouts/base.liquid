@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" />
+
+    <title>TWNSND Workshop Slow Site</title>
+
     <script>performance.mark("head_start")</script>
     <script src="https://twnsnd-slowsite-reviews.netlify.app/reviews.js" defer></script>
     <script src="https://unpkg.com/lazysizes@5.3.2/lazysizes.js" async></script>
@@ -12,10 +16,6 @@
     <style>{% include 'styles/global.css' %}</style>
 
     <link rel="preload" as="image" href="/images/product-image-1-preview.jpg?width=100" />
-
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes" />
-
-    <title>TWNSND Workshop Slow Site</title>
 
     {% if product %}
       <link rel="canonical" href="/catalog/{{ product.slug }}/" />
